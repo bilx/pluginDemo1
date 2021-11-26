@@ -13,6 +13,7 @@
         <activity
             android:name=".ModuleActivity"
             android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:screenOrientation="behind">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
