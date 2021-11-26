@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.april.demo1_module">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <application android:usesCleartextTraffic="true">
+
+
+        <!-- 解析deeplink -->
+        <activity
+            android:name=".ModuleActivity"
+            android:exported="true"
+            android:screenOrientation="behind">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- url跳转格式为：https://com.demo1 -->
+                <data
+                    android:host="com.demo1"
+                    android:scheme="router" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
