@@ -3,6 +3,6 @@
  
 ```
   dependencies {
-	        implementation 'com.github.bilx:pluginDemo1:Tag'
+	        implementation 'com.github.bilx:pluginDemo1:1.0.0'
 	}
 ```
